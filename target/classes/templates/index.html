@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a th:href="@{/}">Home</a></li>
+      <li><a th:href="@{/logout}">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="dashboard">
+    <h1>Welcome to the Dashboard</h1>
+    <div class="info-boxes">
+      <div class="info-box">
+        <h2>Total Users</h2>
+        <p>150</p>
+      </div>
+      <div class="info-box">
+        <h2>Active Radars</h2>
+        <p>25</p>
+      </div>
+      <div class="info-box">
+        <h2>Infractions Today</h2>
+        <p>10</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Radar Management System</p>
+</footer>
+</body>
+</html>
